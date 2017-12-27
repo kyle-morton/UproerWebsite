@@ -1,6 +1,7 @@
 {
+    "root": "app/",
     "routes": {
-        "/**": "index.html",
-        "error_page": "error.html"
-      }
+        "/**": "views/index.html"
+    },
+    "error_page": "views/error.html"
 }
