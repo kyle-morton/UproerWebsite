@@ -7,11 +7,11 @@
     <meta name="author" content="Uproer Solutions">
     <title>Uproer Solutions - Web Development Made Easy</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
-    <link href="../Content/bootstrap.min.css">
-    <link href="../Content/font-awesome.min.css">
-    <link href="../Content/animate.css">
-    <link href="../Content/site.css">
-    <link href="../Content/color.css">
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/font-awesome.min.css" rel="stylesheet">
+    <link href="../Content/animate.css" rel="stylesheet">
+    <link href="../Content/site.css" rel="stylesheet">
+    <link href="../Content/color.css" rel="stylesheet">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
@@ -89,7 +89,7 @@
                     <div class="wow bounceInUp team-box" data-wow-delay="0.5s">
                         <div class="team boxed-grey">
                             <div class="inner">
-                                <div class="avatar"><img src="/img/team/kaylee_thumbnail.jpg" alt="" class="img-responsive img-circle img-avater center" /></div>
+                                <div class="avatar"><img src="../img/team/kaylee_thumbnail.jpg" alt="" class="img-responsive img-circle img-avater center" /></div>
                                 <h5>Kaylee Karabulut</h5>
                                 <p class="subtitle">Photography & Graphic Design</p>
                                 <div class="row">
@@ -107,7 +107,7 @@
                     <div class="wow bounceInUp team-box" data-wow-delay="0.2s">
                         <div class="team boxed-grey">
                             <div class="inner">
-                                <div class="avatar"><img src="/img/team/kyle_thumbnail.jpg" alt="" class="img-responsive img-circle img-avater center" /></div>
+                                <div class="avatar"><img src="../img/team/kyle_thumbnail.jpg" alt="" class="img-responsive img-circle img-avater center" /></div>
                                 <h5>Kyle Morton</h5>
                                 <p class="subtitle">Web Development</p>
                                 <div class="row">
@@ -175,7 +175,7 @@
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-box">
                             <div class="service-icon">
-                                <img src="/img/icons/service-icon-2.png" alt="" />
+                                <img src="../img/icons/service-icon-2.png" alt="" />
                             </div>
                             <div class="service-desc">
                                 <h5>Web Design</h5>
@@ -188,7 +188,7 @@
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-box">
                             <div class="service-icon">
-                                <img src="/img/icons/service-icon-3.png" alt="" />
+                                <img src="../img/icons/service-icon-3.png" alt="" />
                             </div>
                             <div class="service-desc">
                                 <h5>Photography</h5>
@@ -201,7 +201,7 @@
                     <div class="wow fadeInRight" data-wow-delay="0.2s">
                         <div class="service-box">
                             <div class="service-icon">
-                                <img src="/img/icons/service-icon-4.png" alt="" />
+                                <img src="../img/icons/service-icon-4.png" alt="" />
                             </div>
                             <div class="service-desc">
                                 <h5>Graphic Design</h5>
@@ -249,7 +249,7 @@
                                             <label for="name">
                                                 Name
                                             </label>
-                                            <input type="text" class="form-control" maxlength="40" name="Name" /> 
+                                            <input type="text" class="form-control" maxlength="40" name="Name" disabled/> 
                                             <!-- @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @maxlength = "40" }) -->
                                             <div class="validation"></div>
                                         </div>
@@ -258,7 +258,7 @@
                                                 Email Address
                                             </label>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" maxlength="40" name="EmailAddress" /> 
+                                                <input type="text" class="form-control" maxlength="40" name="EmailAddress" disabled/> 
                                                 <!-- @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control", @maxlength = "40" }) -->
                                                 <div class="validation"></div>
                                             </div>
@@ -267,7 +267,7 @@
                                             <label for="subject">
                                                 Subject
                                             </label>
-                                            <input type="text" class="form-control" maxlength="40" name="Subject" /> 
+                                            <input type="text" class="form-control" maxlength="40" name="Subject" disabled/> 
                                             <!-- @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", @maxlength = "40" }) -->
                                             <div class="validation"></div>
                                         </div>
@@ -279,7 +279,7 @@
                                                     <label for="name">
                                                         Message
                                                     </label>
-                                                    <textarea name="Message" class="form-control" maxlength="200" rows="3"/>
+                                                    <textarea name="Message" class="form-control" maxlength="200" rows="3" disabled style="resize: none;"></textarea>
                                                     <!-- @Html.TextAreaFor(m => m.Message, new { @class = "form-control", rows = 3, @maxlength = "200" }) -->
                                                     <div class="validation"></div>
                                                 </div>
@@ -288,12 +288,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="row">
-                                                    <button type="submit" class="btn btn-skin slight-bottom-margin" id="btnContactUs">
+                                                    <button type="submit" class="btn btn-skin slight-bottom-margin" id="btnContactUs" disabled>
                                                         <span>
                                                             Send
                                                         </span>
                                                     </button>
-                                                    <a class="btn btn-skin slight-bottom-margin" id="ContactClearBtn" onclick="uproer.contact.events.clear();">
+                                                    <a class="btn btn-skin slight-bottom-margin" id="ContactClearBtn" onclick="uproer.contact.events.clear();" disabled>
                                                         Clear
                                                     </a>
                                                 </div>
@@ -369,7 +369,7 @@
     <script src="../Scripts/jquery-1.10.2.min.js"></script>
     <script src="../Scripts/jquery.easing.min.js"></script>
     <script src="../Scripts/jquery.scrollTo.js"></script>
-    <script src="../Scripts/query.unobtrusive-ajax.min.js"></script>
+    <!-- <script src="../Scripts/query.unobtrusive-ajax.min.js"></script> -->
     <script src="../Scripts/bootstrap.js"></script>
     <script src="../Scripts/respond.js"></script>
     <script src="../Scripts/wow.min.js"></script>
