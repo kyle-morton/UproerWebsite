@@ -465,7 +465,7 @@ form#contact-form .form-control {
 }
 
 .widget-contact {
-	text-align: left;
+	text-align: center; /*left; */
 }
 
 .validation {
